@@ -1,0 +1,963 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* scroll-behavior: smooth; */
+    font-family: "Lato", sans-serif;
+}
+/* Global Part */
+body{
+    background: #525766;
+}
+#containerAll{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    align-items: center;
+}
+#container{
+    height: 100vh;
+    width: 1200vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#phoneContainer{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+#phone{
+    width: 270px;
+    height: 500px;
+    background: #DEDFE6;
+    border: 5px solid #FBFFFF;
+    border-radius: 50px;
+    position: fixed;
+    z-index: 2;
+    margin: 50px auto;
+}
+.topContainer, .bottomContainer{
+    height: 12.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+/* Top part of phone */
+.line{
+    display: flex;
+}
+.lineBlocks{
+    height: 10px;
+    width: 10px;
+    background: #A1A7B4;
+}
+.leftLine{
+    border-radius: 50% 0% 0% 50%;
+}
+.middleLine{
+    width: 70px;
+}
+.rightLine{
+    border-radius: 0% 50% 50% 0%;
+}
+/* middle part of phone */
+.screen{
+    height: 75%;
+    width: 90%;
+    margin: auto;
+    background: #3A3C3D;
+    position: relative;
+}
+.topScreen{
+    height: 8%;
+    background: #F15734;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.middlePhone{
+    height: 92%;
+    position: relative;
+}
+.homeBlock{
+    height: 100%;
+    display: grid;
+    color: white;
+    text-align: center;
+    gap: 5px;
+    padding: 10px;
+    cursor: default;
+    overflow: hidden;
+    position: relative;
+    bottom: 18px;
+}
+#doppioContainerAncre, #macchiattoContainerAncre, #cortadoContainerAncre, #cappuccinoContainerAncre, #americanoContainerAncre, #mochaContainerAncre, #latteContainerAncre, #breveContainerAncre, #mochaBreveContainerAncre, #flatWhiteContainerAncre, #cafeBombonContainerAncre{
+    position: relative;
+    z-index: 3;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* animation for cup screen */
+@keyframes testOpacity {
+    from{
+        opacity: 0%;
+    }
+    50%{
+    }
+    to{
+        background: #3A3C3D;
+        opacity: 100%;
+    }
+}
+@keyframes display {
+    from{
+        /* visibility: hidden; */
+        display: none;
+    }
+    to{
+        /* visibility: hidden; */
+        display: none;
+    }
+}
+#doppioAncre{
+    height: 330px;
+    width: 230px;
+    background: #3A3C3D;
+    position: relative;
+    bottom: 9.5vh;
+    margin-top: 50px;
+    left: 0.2%;
+}
+.description{
+    margin-top: 15px;
+    font-size: small;
+}
+/* Doppio */
+#doppioContainerAncre:target #doppioAncre{
+    animation: testOpacity 1s;
+}
+#doppioContainerAncre:target #doppioAncre #colorOpacity{
+    animation: display 1s;
+}
+#doppioContainerAncre:target #doppioAncre #containerCoffe{
+    animation: tasse 3s;
+}
+#doppioContainerAncre:target #doppioAncre .description{
+    animation: marginAnimation 3s;
+}
+/* Macchiatto */
+#macchiattoContainerAncre:target #doppioAncre{
+    animation: testOpacity 1s;
+}
+#macchiattoContainerAncre:target #doppioAncre #colorOpacity{
+    animation: display 1s;
+}
+#macchiattoContainerAncre:target #doppioAncre #containerCoffe{
+    animation: tasse 3s;
+}
+#macchiattoContainerAncre:target #doppioAncre .description{
+    animation: marginAnimation 3s;
+}
+/* cortado */
+#cortadoContainerAncre:target #doppioAncre{
+    animation: testOpacity 1s;
+}
+#cortadoContainerAncre:target #doppioAncre #colorOpacity{
+    animation: display 1s;
+}
+#cortadoContainerAncre:target #doppioAncre #containerCoffe{
+    animation: tasse 3s;
+}
+#cortadoContainerAncre:target #doppioAncre .description{
+    animation: marginAnimation 3s;
+}
+/* cappuccino */
+#cappuccinoContainerAncre:target #doppioAncre{
+    animation: testOpacity 1s;
+}
+#cappuccinoContainerAncre:target #doppioAncre #colorOpacity{
+    animation: display 1s;
+}
+#cappuccinoContainerAncre:target #doppioAncre #containerCoffe{
+    animation: tasse 3s;
+}
+#cappuccinoContainerAncre:target #doppioAncre .description{
+    animation: marginAnimation 3s;
+}
+/* americano */
+#americanoContainerAncre:target #doppioAncre{
+    animation: testOpacity 1s;
+}
+#americanoContainerAncre:target #doppioAncre #colorOpacity{
+    animation: display 1s;
+}
+#americanoContainerAncre:target #doppioAncre #containerCoffe{
+    animation: tasse 3s;
+}
+#americanoContainerAncre:target #doppioAncre .description{
+    animation: marginAnimation 3s;
+}
+/* Mocha */
+#mochaContainerAncre:target #doppioAncre{
+    animation: testOpacity 1s;
+}
+#mochaContainerAncre:target #doppioAncre #colorOpacity{
+    animation: display 1s;
+}
+#mochaContainerAncre:target #doppioAncre #containerCoffe{
+    animation: tasse 3s;
+}
+#mochaContainerAncre:target #doppioAncre .description{
+    animation: marginAnimation 3s;
+}
+/* Latte */
+#latteContainerAncre:target #doppioAncre{
+    animation: testOpacity 1s;
+}
+#latteContainerAncre:target #doppioAncre #colorOpacity{
+    animation: display 1s;
+}
+#latteContainerAncre:target #doppioAncre #containerCoffe{
+    animation: tasse 3s;
+}
+#latteContainerAncre:target #doppioAncre .description{
+    animation: marginAnimation 3s;
+}
+/* Breve */
+#breveContainerAncre:target #doppioAncre{
+    animation: testOpacity 1s;
+}
+#breveContainerAncre:target #doppioAncre #colorOpacity{
+    animation: display 1s;
+}
+#breveContainerAncre:target #doppioAncre #containerCoffe{
+    animation: tasse 3s;
+}
+#breveContainerAncre:target #doppioAncre .description{
+    animation: marginAnimation 3s;
+}
+/* MochaBreve */
+#mochaBreveContainerAncre:target #doppioAncre{
+    animation: testOpacity 1s;
+}
+#mochaBreveContainerAncre:target #doppioAncre #colorOpacity{
+    animation: display 1s;
+}
+#mochaBreveContainerAncre:target #doppioAncre #containerCoffe{
+    animation: tasse 3s;
+}
+#mochaBreveContainerAncre:target #doppioAncre .description{
+    animation: marginAnimation 3s;
+}
+/* flat White */
+#flatWhiteContainerAncre:target #doppioAncre{
+    animation: testOpacity 1s;
+}
+#flatWhiteContainerAncre:target #doppioAncre #colorOpacity{
+    animation: display 1s;
+}
+#flatWhiteContainerAncre:target #doppioAncre #containerCoffe{
+    animation: tasse 3s;
+}
+#flatWhiteContainerAncre:target #doppioAncre .description{
+    animation: marginAnimation 3s;
+}
+/* Café Bombon */
+#cafeBombonContainerAncre:target #doppioAncre{
+    animation: testOpacity 1s;
+}
+#cafeBombonContainerAncre:target #doppioAncre #colorOpacity{
+    animation: display 1s;
+}
+#cafeBombonContainerAncre:target #doppioAncre #containerCoffe{
+    animation: tasse 3s;
+}
+#cafeBombonContainerAncre:target #doppioAncre .description{
+    animation: marginAnimation 3s;
+}
+@keyframes marginAnimation {
+    from{
+        position: relative;
+        top: 20px;
+    }to{
+        top: -20px;
+    }
+}
+@keyframes tasse {
+    from{
+        position: relative;
+        right: 300px;
+    }to{
+        right: -300px;
+    }
+}
+/* doppio */
+.doppio{
+    padding: 5px;
+}
+.underline{
+    height: 1px;
+    background: red;
+    animation: underline 2s;
+    margin: 4px auto;
+    width: 70px;
+}
+@keyframes underline {
+    from{
+        width: 0px;
+    }to{
+        width: 70px;
+    }
+}
+.smoke-container{
+    height: 0px;
+    width: 100%;
+    position: relative;
+}
+@keyframes animationSmoke1 {
+    from{
+        height: 20px;
+        width: 20px; 
+        bottom: 0px;
+        left: 80px;
+    }
+    50%{
+        bottom: 10px;
+        height: 50px;
+    }
+    to{
+        left: 40px;
+        bottom: 25px;
+        height: 10px;
+        width: 10px;
+    }
+}
+@keyframes animationSmoke2 {
+    from{
+        height: 20px;
+        width: 20px; 
+        bottom: 0px;
+        left: 100px;
+        left: 110px;
+    }
+    50%{
+        bottom: 10px;
+        height: 50px;
+    }
+    to{
+        left: 65px;
+        bottom: 25px;
+        height: 10px;
+        width: 10px;
+    }
+}
+/* doppio smoke*/
+#doppioContainerAncre:target #doppioAncre .smoke{
+    animation: animationSmoke1 3s infinite;
+}
+#doppioContainerAncre:target #doppioAncre .smoke2{
+    animation: animationSmoke2 3s infinite;
+}
+/* macchiatto smoke */
+#macchiattoContainerAncre:target #doppioAncre .smoke{
+    animation: animationSmoke1 3s infinite;
+}
+#macchiattoContainerAncre:target #doppioAncre .smoke2{
+    animation: animationSmoke2 3s infinite;
+}
+/* cortado smoke */
+#cortadoContainerAncre:target #doppioAncre .smoke{
+    animation: animationSmoke1 3s infinite;
+}
+#cortadoContainerAncre:target #doppioAncre .smoke2{
+    animation: animationSmoke2 3s infinite;
+}
+/* cappuccino */
+#cappuccinoContainerAncre:target #doppioAncre .smoke{
+    animation: animationSmoke1 3s infinite;
+}
+#cappuccinoContainerAncre:target #doppioAncre .smoke2{
+    animation: animationSmoke2 3s infinite;
+}
+/* americano */
+#americanoContainerAncre:target #doppioAncre .smoke{
+    animation: animationSmoke1 3s infinite;
+}
+#americanoContainerAncre:target #doppioAncre .smoke2{
+    animation: animationSmoke2 3s infinite;
+}
+/* Mocha */
+#mochaContainerAncre:target #doppioAncre .smoke{
+    animation: animationSmoke1 3s infinite;
+}
+#mochaContainerAncre:target #doppioAncre .smoke2{
+    animation: animationSmoke2 3s infinite;
+}
+/* Latte */
+#latteContainerAncre:target #doppioAncre .smoke{
+    animation: animationSmoke1 3s infinite;
+}
+#latteContainerAncre:target #doppioAncre .smoke2{
+    animation: animationSmoke2 3s infinite;
+}
+/* Breve */
+#breveContainerAncre:target #doppioAncre .smoke{
+    animation: animationSmoke1 3s infinite;
+}
+#breveContainerAncre:target #doppioAncre .smoke2{
+    animation: animationSmoke2 3s infinite;
+}
+/* MochaBreve */
+#mochaBreveContainerAncre:target #doppioAncre .smoke{
+    animation: animationSmoke1 3s infinite;
+}
+#mochaBreveContainerAncre:target #doppioAncre .smoke2{
+    animation: animationSmoke2 3s infinite;
+}
+/* Flat White */
+#flatWhiteContainerAncre:target #doppioAncre .smoke{
+    animation: animationSmoke1 3s infinite;
+}
+#flatWhiteContainerAncre:target #doppioAncre .smoke2{
+    animation: animationSmoke2 3s infinite;
+}
+/* Café Bombon */
+#cafeBombonContainerAncre:target #doppioAncre .smoke{
+    animation: animationSmoke1 3s infinite;
+}
+#cafeBombonContainerAncre:target #doppioAncre .smoke2{
+    animation: animationSmoke2 3s infinite;
+}
+.smoke, .smoke2{
+    position: absolute;  
+    background: #F5F5F5; 
+    filter: blur(10px);
+    border-radius: 50%;
+    left: 80px;
+}
+.containerCoffe{
+    display: grid;
+    margin: auto;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+.cup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.coffe{
+    height: 100px;
+    width: 100px;
+    border: 4px solid white;
+    border-radius: 5px 5px 30px 30px;
+    position: relative;
+    z-index: 3;
+    margin-top: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background: #3A3C3D;
+}
+.handleCoffe{
+    height: 30px;
+    width: 27px;
+    border-right: 4px solid white;
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 30px;
+    transform: rotate(350deg);
+    position: relative;
+    bottom: 2px;
+    right: 3px;
+}
+.blackCoffe{
+    height: 30px;
+    width: 100%;
+    background: #51241D;
+    border-radius: 0px 0px 30px 30px;
+}
+.middleCoffe{
+    height: 5px;
+    width: 100%; 
+    background: #B27146;
+}
+.milk{
+    height: 10px;
+    width: 100%;
+    background: #FCFDFE;
+}
+.milkCortado{
+    height: 30px;
+    width: 100%;
+    background: #FCFDFE;
+}
+.doubleMilk{
+    height: 30px;
+    width: 100%;
+    background: #F1EAD9;
+}
+.milkAmericano{
+    height: 40px;
+    width: 100%;
+    background: #C7DBE0;
+}
+.milkMocha{
+    height: 40px;
+    width: 100%;
+    background: #75491B;
+}
+.milkLatte{
+    height: 50px;
+    width: 100%;
+    background: #EFEAD9;
+}
+.milkCafeBombon{
+    height: 30px;
+    width: 100%;
+    background: #EFEAD9;
+    border-radius: 0px 0px 30px 30px;
+}
+.blackCoffeBombon{
+    height: 30px;
+    width: 100%;
+    background: #51241D;
+}
+/* animation for coffe */
+@keyframes coffe {
+    from{
+        height: 0px;
+    }
+    to{
+        height: 30px;
+    }
+}
+@keyframes coffeM {
+    from{
+        height: 0px;
+    }
+    to{
+        height: 5px;
+    }
+}
+@keyframes milk {
+    from{
+        height: 0px;
+    }
+    to{
+        height: 10px;
+    }
+}
+@keyframes milkCortado {
+    from{
+        height: 0;
+    }
+    to{
+        height: 20px;
+    }
+}
+@keyframes doubleMilk {
+    from{
+        height: 0;
+    }
+    to{
+        height: 30px;
+    }
+}
+@keyframes milkAmericano {
+    from{
+        height: 0;
+    }
+    to{
+        height: 40px;
+    }
+}
+@keyframes milkMocha {
+    from{
+        height: 0;
+    }
+    to{
+        height: 40px;
+    }
+}
+@keyframes milkLatte {
+    from{
+        height: 0;
+    }
+    to{
+        height: 50px;
+    }
+}
+@keyframes milkCafeBombon {
+    from{
+        height: 0;
+    }
+    to{
+        height: 30px;
+    }
+}
+@keyframes blackCoffeBombon {
+    from{
+        height: 0;
+    }
+    to{
+        height: 30px;
+    }
+}
+/* doppio */
+#doppioContainerAncre:target #doppioAncre .homeBlock #colorOpacity .doppio .containerCoffe .cup .coffe .blackCoffe{
+    animation: coffe 1s;
+}
+#doppioContainerAncre:target #doppioAncre .homeBlock #colorOpacity .doppio .containerCoffe .cup .coffe .middleCoffe{
+    animation: coffeM 1s;
+}
+/* macchiatto */
+#macchiattoContainerAncre:target #doppioAncre .homeBlock #colorOpacity .doppio .containerCoffe .cup .coffe .blackCoffe{
+    animation: coffe 1s;
+}
+#macchiattoContainerAncre:target #doppioAncre .homeBlock #colorOpacity .doppio .containerCoffe .cup .coffe .middleCoffe{
+    animation: coffeM 1s;
+}
+#macchiattoContainerAncre:target #doppioAncre .homeBlock #colorOpacity .doppio .containerCoffe .cup .coffe .milk{
+    animation: milk 1s;
+}
+/* cortado */
+#cortadoContainerAncre:target #doppioAncre .homeBlock #colorOpacity .doppio .containerCoffe .cup .coffe .blackCoffe{
+    animation: coffe 1s;
+}
+#cortadoContainerAncre:target #doppioAncre .homeBlock #colorOpacity .doppio .containerCoffe .cup .coffe .middleCoffe{
+    animation: coffeM 1s;
+}
+#cortadoContainerAncre:target #doppioAncre .homeBlock #colorOpacity .doppio .containerCoffe .cup .coffe .milkCortado{
+    animation: milkCortado 1s;
+}
+/* cappuccino */
+#cappuccinoContainerAncre:target #doppioAncre .homeBlock #colorOpacity .doppio .containerCoffe .cup .coffe .blackCoffe{
+    animation: coffe 1s;
+}
+#cappuccinoContainerAncre:target #doppioAncre .homeBlock #colorOpacity .doppio .containerCoffe .cup .coffe .middleCoffe{
+    animation: coffeM 1s;
+}
+#cappuccinoContainerAncre:target #doppioAncre .homeBlock #colorOpacity .doppio .containerCoffe .cup .coffe .milkCortado{
+    animation: milkCortado 1s;
+}
+#cappuccinoContainerAncre:target #doppioAncre .homeBlock #colorOpacity .doppio .containerCoffe .cup .coffe .doubleMilk{
+    animation: doubleMilk 1s;
+}
+/* americano */
+#americanoContainerAncre:target #doppioAncre .homeBlock #colorOpacity .doppio .containerCoffe .cup .coffe .blackCoffe{
+    animation: coffe 1s;
+}
+#americanoContainerAncre:target #doppioAncre .homeBlock #colorOpacity .doppio .containerCoffe .cup .coffe .middleCoffe{
+    animation: coffeM 1s;
+}
+#americanoContainerAncre:target #doppioAncre .homeBlock #colorOpacity .doppio .containerCoffe .cup .coffe .milkAmericano{
+    animation: milkAmericano 1s;
+}
+/* Mocha */
+#mochaContainerAncre:target #doppioAncre .homeBlock #colorOpacity .doppio .containerCoffe .cup .coffe .blackCoffe{
+    animation: coffe 1s;
+}
+#mochaContainerAncre:target #doppioAncre .homeBlock #colorOpacity .doppio .containerCoffe .cup .coffe .middleCoffe{
+    animation: coffeM 1s;
+}
+#mochaContainerAncre:target #doppioAncre .homeBlock #colorOpacity .doppio .containerCoffe .cup .coffe .milkMocha{
+    animation: milkMocha 2s;
+}
+#mochaContainerAncre:target #doppioAncre .homeBlock #colorOpacity .doppio .containerCoffe .cup .coffe .milk{
+    animation: milk 1s;
+}
+/* Latte */
+#latteContainerAncre:target #doppioAncre .homeBlock #colorOpacity .doppio .containerCoffe .cup .coffe .blackCoffe{
+    animation: coffe 1s;
+}
+#latteContainerAncre:target #doppioAncre .homeBlock #colorOpacity .doppio .containerCoffe .cup .coffe .middleCoffe{
+    animation: coffeM 1s;
+}
+#latteContainerAncre:target #doppioAncre .homeBlock #colorOpacity .doppio .containerCoffe .cup .coffe .milkLatte{
+    animation: milkLatte 1s;
+}
+/* Breve */
+#breveContainerAncre:target #doppioAncre .homeBlock #colorOpacity .doppio .containerCoffe .cup .coffe .blackCoffe{
+    animation: coffe 1s;
+}
+#breveContainerAncre:target #doppioAncre .homeBlock #colorOpacity .doppio .containerCoffe .cup .coffe .middleCoffe{
+    animation: coffeM 1s;
+}
+#breveContainerAncre:target #doppioAncre .homeBlock #colorOpacity .doppio .containerCoffe .cup .coffe .milkLatte{
+    animation: milkLatte 1s;
+}
+/* MochaBreve */
+#mochaBreveContainerAncre:target #doppioAncre .homeBlock #colorOpacity .doppio .containerCoffe .cup .coffe .blackCoffe{
+    animation: coffe 1s;
+}
+#mochaBreveContainerAncre:target #doppioAncre .homeBlock #colorOpacity .doppio .containerCoffe .cup .coffe .middleCoffe{
+    animation: coffeM 1s;
+}
+#mochaBreveContainerAncre:target #doppioAncre .homeBlock #colorOpacity .doppio .containerCoffe .cup .coffe .milkLatte{
+    animation: milkLatte 3s;
+}
+#mochaBreveContainerAncre:target #doppioAncre .homeBlock #colorOpacity .doppio .containerCoffe .cup .coffe .milkMocha{
+    animation: milkMocha 2s;
+}
+/* MochaBreve */
+#flatWhiteContainerAncre:target #doppioAncre .homeBlock #colorOpacity .doppio .containerCoffe .cup .coffe .blackCoffe{
+    animation: coffe 1s;
+}
+#flatWhiteContainerAncre:target #doppioAncre .homeBlock #colorOpacity .doppio .containerCoffe .cup .coffe .middleCoffe{
+    animation: coffeM 1s;
+}
+#flatWhiteContainerAncre:target #doppioAncre .homeBlock #colorOpacity .doppio .containerCoffe .cup .coffe .milkLatte{
+    animation: milkLatte 3s;
+}
+/* Café Bombon */
+#cafeBombonContainerAncre:target #doppioAncre .homeBlock #colorOpacity .doppio .containerCoffe .cup .coffe .blackCoffe{
+    animation: coffe 1s;
+}
+#cafeBombonContainerAncre:target #doppioAncre .homeBlock #colorOpacity .doppio .containerCoffe .cup .coffe .middleCoffe{
+    animation: coffeM 1s;
+}
+#cafeBombonContainerAncre:target #doppioAncre .homeBlock #colorOpacity .doppio .containerCoffe .cup .coffe .blackCoffeBombon{
+    animation: blackCoffeBombon 3s;
+}
+#cafeBombonContainerAncre:target #doppioAncre .homeBlock #colorOpacity .doppio .containerCoffe .cup .coffe .milkCafeBombon{
+    animation: milkCafeBombon 3s;
+}
+.selection{
+    color: white;
+    background: gray;
+    font-size: small;
+    height: 50px;
+    width: 250px;
+    border: 2px solid white;
+    padding: 10px;
+    margin-top: 100px;
+}
+.selection:hover{
+    color: gray;
+    background: white;
+    font-size: small;
+    height: 30px;
+    width: 150px;
+}
+/* animation for main screen */
+.middlePhoneDoppio, .middlePhoneMacchiatto, .middlePhoneCortado, .middlePhoneCappuccino, .middlePhoneAmericano, .middlePhoneMocha, .middlePhoneLatte, .middlePhoneBreve, .middlePhoneMochaBreve, .middlePhoneFlatWhite, .middlePhoneCafeBombon{
+    display: block;
+    height: 0px;
+    width: 0px;
+    visibility: hidden;
+    margin: auto;
+    border: 1px solid transparent;
+}
+@keyframes forMacchiatto {
+    from{
+        margin-top: 18px;
+    }
+    to{
+        margin-top: 18px;
+    }
+}
+@keyframes displayBlock {
+    from{
+        height: 320px;
+        width: 230px;
+        visibility: visible;
+    }
+    to{
+        height: 320px;
+        width: 230px;
+        visibility: visible;
+    }
+}
+@keyframes slideRight {
+    from{
+        position: relative;
+        left: 0px;
+    }
+    to{
+        left: 900px;
+    }
+}
+@keyframes topAnimation {
+    from{
+        position: relative;
+        top: 0px;
+        opacity: 100%;
+    }
+    30%{
+        opacity: 0%;
+    }
+    to{
+        top: 80px;
+        opacity: 0%;
+    }
+}
+/* doppio */
+#phoneContainer:target #phone .screen .middlePhoneDoppio{
+    animation: displayBlock 2s;
+}
+#phoneContainer:target #phone .screen .middlePhone{
+    animation: display 2s;
+}
+#phoneContainer:target #phone .screen .middlePhoneDoppio .homeBlock .doppio .containerCoffe{
+    animation: slideRight 7s;
+}
+#phoneContainer:target #phone .screen .middlePhoneDoppio .homeBlock .doppio .description{
+    animation: topAnimation 3s forwards;
+}
+/* macchiatto */
+#forMacchiatto:target #container #phoneContainer #phone .screen .middlePhoneMacchiatto{
+    animation: displayBlock 2s, forMacchiatto 2s;
+}
+#forMacchiatto:target #container #phoneContainer #phone .screen .middlePhone{
+    animation: display 2s;
+}
+#forMacchiatto:target #container #phoneContainer #phone .screen .middlePhoneMacchiatto .homeBlock .doppio .containerCoffe{
+    animation: slideRight 7s;
+}
+#forMacchiatto:target #container #phoneContainer #phone .screen .middlePhoneMacchiatto .homeBlock .doppio .description{
+    animation: topAnimation 3s forwards;
+}
+
+/* cortado */
+#forCortado:target #forMacchiatto #container #phoneContainer #phone .screen .middlePhoneCortado{
+    animation: displayBlock 2s, forMacchiatto 2s;
+}
+#forCortado:target #forMacchiatto #container #phoneContainer #phone .screen .middlePhone{
+    animation: display 2s;
+}
+#forCortado:target #forMacchiatto #container #phoneContainer #phone .screen .middlePhoneCortado .homeBlock .doppio .containerCoffe{
+    animation: slideRight 7s;
+}
+#forCortado:target #forMacchiatto #container #phoneContainer #phone .screen .middlePhoneCortado .homeBlock .doppio .description{
+    animation: topAnimation 3s forwards;
+}
+/* cappucino */
+#forCappuccino:target #forCortado #forMacchiatto #container #phoneContainer #phone .screen .middlePhoneCappuccino{
+    animation: displayBlock 2s, forMacchiatto 2s;
+}
+#forCappuccino:target #forCortado #forMacchiatto #container #phoneContainer #phone .screen .middlePhone{
+    animation: display 2s;
+}
+#forCappuccino:target #forCortado #forMacchiatto #container #phoneContainer #phone .screen .middlePhoneCappuccino .homeBlock .doppio .containerCoffe{
+    animation: slideRight 7s;
+}
+#forCappuccino:target #forCortado #forMacchiatto #container #phoneContainer #phone .screen .middlePhoneCappuccino .homeBlock .doppio .description{
+    animation: topAnimation 3s forwards;
+}
+/* americano */
+#forAmericano:target #forCappuccino #forCortado #forMacchiatto #container #phoneContainer #phone .screen .middlePhoneAmericano{
+    animation: displayBlock 2s, forMacchiatto 2s;
+}
+#forAmericano:target #forCappuccino #forCortado #forMacchiatto #container #phoneContainer #phone .screen .middlePhone{
+    animation: display 2s;
+}
+#forAmericano:target #forCappuccino #forCortado #forMacchiatto #container #phoneContainer #phone .screen .middlePhoneAmericano .homeBlock .doppio .containerCoffe{
+    animation: slideRight 7s;
+}
+#forAmericano:target #forCappuccino #forCortado #forMacchiatto #container #phoneContainer #phone .screen .middlePhoneAmericano .homeBlock .doppio .description{
+    animation: topAnimation 3s forwards;
+}
+
+/* Mocha */
+#forMocha:target #forCappuccino #forCortado #forMacchiatto #container #phoneContainer #phone .screen .middlePhoneMocha{
+    animation: displayBlock 2s, forMacchiatto 2s;
+}
+#forMocha:target #forCappuccino #forCortado #forMacchiatto #container #phoneContainer #phone .screen .middlePhone{
+    animation: display 2s;
+}
+#forMocha:target #forCappuccino #forCortado #forMacchiatto #container #phoneContainer #phone .screen .middlePhoneMocha .homeBlock .doppio .containerCoffe{
+    animation: slideRight 7s;
+}
+#forMocha:target #forCappuccino #forCortado #forMacchiatto #container #phoneContainer #phone .screen .middlePhoneMocha .homeBlock .doppio .description{
+    animation: topAnimation 3s forwards;
+}
+/* Latte */
+#forLatte:target #forMocha #forCappuccino #forCortado #forMacchiatto #container #phoneContainer #phone .screen .middlePhoneLatte{
+    animation: displayBlock 2s, forMacchiatto 2s;
+}
+#forLatte:target #forMocha #forCappuccino #forCortado #forMacchiatto #container #phoneContainer #phone .screen .middlePhone{
+    animation: display 2s;
+}
+#forLatte:target #forMocha #forCappuccino #forCortado #forMacchiatto #container #phoneContainer #phone .screen .middlePhoneLatte .homeBlock .doppio .containerCoffe{
+    animation: slideRight 7s;
+}
+#forLatte:target #forMocha #forCappuccino #forCortado #forMacchiatto #container #phoneContainer #phone .screen .middlePhoneLatte .homeBlock .doppio .description{
+    animation: topAnimation 3s forwards;
+}
+/* Breve */
+#forBreve:target #forMocha #forCappuccino #forCortado #forMacchiatto #container #phoneContainer #phone .screen .middlePhoneBreve{
+    animation: displayBlock 2s, forMacchiatto 2s;
+}
+#forBreve:target #forMocha #forCappuccino #forCortado #forMacchiatto #container #phoneContainer #phone .screen .middlePhone{
+    animation: display 2s;
+}
+#forBreve:target #forMocha #forCappuccino #forCortado #forMacchiatto #container #phoneContainer #phone .screen .middlePhoneBreve .homeBlock .doppio .containerCoffe{
+    animation: slideRight 7s;
+}
+#forBreve:target #forMocha #forCappuccino #forCortado #forMacchiatto #container #phoneContainer #phone .screen .middlePhoneBreve .homeBlock .doppio .description{
+    animation: topAnimation 3s forwards;
+}
+/* MochaBreve */
+#forMochaBreve:target #forBreve #forMocha #forCappuccino #forCortado #forMacchiatto #container #phoneContainer #phone .screen .middlePhoneMochaBreve{
+    animation: displayBlock 2s, forMacchiatto 2s;
+}
+#forMochaBreve:target #forBreve #forMocha #forCappuccino #forCortado #forMacchiatto #container #phoneContainer #phone .screen .middlePhone{
+    animation: display 2s;
+}
+#forMochaBreve:target #forBreve #forMocha #forCappuccino #forCortado #forMacchiatto #container #phoneContainer #phone .screen .middlePhoneMochaBreve .homeBlock .doppio .containerCoffe{
+    animation: slideRight 7s;
+}
+#forMochaBreve:target #forBreve #forMocha #forCappuccino #forCortado #forMacchiatto #container #phoneContainer #phone .screen .middlePhoneMochaBreve .homeBlock .doppio .description{
+    animation: topAnimation 3s forwards;
+}
+/* Flat White */
+#forFlatWhite:target #forMochaBreve #forMocha #forCappuccino #forCortado #forMacchiatto #container #phoneContainer #phone .screen .middlePhoneFlatWhite{
+    animation: displayBlock 2s, forMacchiatto 2s;
+}
+#forFlatWhite:target #forMochaBreve #forBreve #forMocha #forCappuccino #forCortado #forMacchiatto #container #phoneContainer #phone .screen .middlePhone{
+    animation: display 2s;
+}
+#forFlatWhite:target #forMochaBreve #forBreve #forMocha #forCappuccino #forCortado #forMacchiatto #container #phoneContainer #phone .screen .middlePhoneFlatWhite .homeBlock .doppio .containerCoffe{
+    animation: slideRight 7s;
+}
+#forFlatWhite:target #forMochaBreve #forBreve #forMocha #forCappuccino #forCortado #forMacchiatto #container #phoneContainer #phone .screen .middlePhoneFlatWhite .homeBlock .doppio .description{
+    animation: topAnimation 3s forwards;
+}
+/* Café Bombon */
+#forCafeBombon:target #forFlatWhite #forMochaBreve #forMocha #forCappuccino #forCortado #forMacchiatto #container #phoneContainer #phone .screen .middlePhoneCafeBombon{
+    animation: displayBlock 2s, forMacchiatto 2s;
+}
+#forCafeBombon:target #forFlatWhite #forMochaBreve #forBreve #forMocha #forCappuccino #forCortado #forMacchiatto #container #phoneContainer #phone .screen .middlePhone{
+    animation: display 2s;
+}
+#forCafeBombon:target #forFlatWhite #forMochaBreve #forBreve #forMocha #forCappuccino #forCortado #forMacchiatto #container #phoneContainer #phone .screen .middlePhoneCafeBombon .homeBlock .doppio .containerCoffe{
+    animation: slideRight 7s;
+}
+#forCafeBombon:target #forFlatWhite #forMochaBreve #forBreve #forMocha #forCappuccino #forCortado #forMacchiatto #container #phoneContainer #phone .screen .middlePhoneCafeBombon .homeBlock .doppio .description{
+    animation: topAnimation 3s forwards;
+}
+/* Bottom part of phone */
+.circleButton{
+    height: 40px;
+    width: 40px;
+    background: #D9DFE7;
+    border: 4px solid #BDC3CA;
+    border-radius: 50%;
+}
